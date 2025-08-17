@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Sebastián Rojo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#hero">
+        <h1 class="text-2xl font-bold">Sebastián<span class="text-red-600">Rojo</span></h1>
+      </a>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-red-500">Sobre mí</a>
+        <a href="#skills" class="hover:text-red-500">Habilidades</a>
+        <a href="#projects" class="hover:text-red-500">Proyectos</a>
+        <a href="#contact" class="hover:text-red-500">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section class="bg-gradient-to-r from-red-500 to-red-700 text-white py-20">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+    <!-- Texto Izquierda -->
+    <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+      <h2 class="text-4xl font-bold mb-4">Hola, soy Sebastián</h2>
+      <p class="text-lg mb-6">
+        Desarrollador web Fullstack especializado en Java, Spring, JavaScript, React y MySQL.
+      </p>
+      <a href="#projects" class="bg-white text-red-600 px-6 py-3 rounded-lg font-semibold shadow hover:bg-gray-200">
+        Ver proyectos
+      </a>
+    </div>
+    <!-- Imagen Derecha -->
+    <div class="md:w-1/2 flex justify-center">
+      <img src="https://via.placeholder.com/250" 
+           alt="Foto perfil" 
+           class="rounded-full shadow-lg border-4 border-white w-60 h-60 object-cover">
+    </div>
+  </div>
+</section>
+
+  <!-- About -->
+  <section id="about" class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-6 text-center text-red-600">Sobre mí</h3>
+    <p class="text-lg text-gray-700 max-w-3xl mx-auto text-center">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta aspernatur minus adipisci magni cupiditate illo consectetur ad sit deleniti minima? Perspiciatis adipisci aperiam velit placeat deserunt, perferendis vero obcaecati cumque.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-200 py-16">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-10 text-center text-red-600">Habilidades</h3>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg hover:border-red-500 border-2 border-transparent transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="mx-auto w-12 h-12 mb-4">
+          <p>Java</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg hover:border-red-500 border-2 border-transparent transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" class="mx-auto w-12 h-12 mb-4">
+          <p>Spring Boot</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg hover:border-red-500 border-2 border-transparent transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="mx-auto w-12 h-12 mb-4">
+          <p>React</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg hover:border-red-500 border-2 border-transparent transition">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="mx-auto w-12 h-12 mb-4">
+          <p>MySQL</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-16 container mx-auto px-6">
+    <h3 class="text-3xl font-bold mb-10 text-center text-red-600">Proyectos</h3>
+    <div class="grid gap-8 md:grid-cols-3">
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition hover:border-red-500 border-2 border-transparent">
+        <img src="https://via.placeholder.com/400x250" class="rounded-t-lg" alt="Proyecto 1">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Proyecto 1</h4>
+          <p class="text-gray-700 mb-4">Descripción breve del proyecto.</p>
+          <a href="#" class="text-red-600 hover:underline">Ver más</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition hover:border-red-500 border-2 border-transparent">
+        <img src="https://via.placeholder.com/400x250" class="rounded-t-lg" alt="Proyecto 2">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Proyecto 2</h4>
+          <p class="text-gray-700 mb-4">Descripción breve del proyecto.</p>
+          <a href="#" class="text-red-600 hover:underline">Ver más</a>
+        </div>
+      </div>
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition hover:border-red-500 border-2 border-transparent">
+        <img src="https://via.placeholder.com/400x250" class="rounded-t-lg" alt="Proyecto 3">
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Proyecto 3</h4>
+          <p class="text-gray-700 mb-4">Descripción breve del proyecto.</p>
+          <a href="#" class="text-red-600 hover:underline">Ver más</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-200 py-16">
+    <div class="container mx-auto px-6 max-w-lg">
+      <h3 class="text-3xl font-bold mb-6 text-center text-red-600">Contacto</h3>
+      <form action="#" method="POST" class="bg-white p-6 rounded-lg shadow">
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Nombre</label>
+          <input type="text" name="nombre" class="w-full border-gray-300 rounded-lg p-3 border" required>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Correo</label>
+          <input type="email" name="correo" class="w-full border-gray-300 rounded-lg p-3 border" required>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-2 font-semibold">Mensaje</label>
+          <textarea name="mensaje" rows="4" class="w-full border-gray-300 rounded-lg p-3 border" required></textarea>
+        </div>
+        <button type="submit" class="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 w-full">
+          Enviar mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-6 text-center">
+    <p>&copy; 2025 Sebastián Rojo - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
