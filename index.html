@@ -10,29 +10,49 @@
 
 <body class="bg-gray-100 text-gray-900 font-sans">
 
-  <!-- Header -->
-  <header class="bg-gradient-to-r from-zinc-800 to-stone-900 text-white shadow-md sticky top-0 z-50">
+    <!-- Header -->
+  <header class="bg-white shadow-lg sticky top-0 z-50">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-
-      <div class="flex items-center space-x-3">
+      
+      <!-- Logo + Nombre -->
+      <a href="#hero" class="flex items-center space-x-3">
         <img src="img/MosqueroCardenalLogo.png" alt="Logo" class="w-10 h-10">
-        <a href="#hero">
-          <h1 class="text-2xl font-bold">Sebastián<span class="text-red-600">Rojo</span></h1>
-        </a>
-      </div>
+        <h1 class="text-2xl font-bold">Sebastián<span class="text-red-600">Rojo</span></h1>
+      </a>
 
-      <nav class="space-x-6">
-        <a href="#hero" class="hover:text-red-500">Home</a>
-        <a href="#about" class="hover:text-red-500">Sobre mí</a>
-        <a href="#skills" class="hover:text-red-500">Habilidades</a>
-        <a href="#projects" class="hover:text-red-500">Proyectos</a>
-        <a href="#contact" class="hover:text-red-500">Contacto</a>
+      <!-- Botón hamburguesa -->
+      <button id="menu-btn"
+              class="md:hidden text-red-600 focus:outline-none
+                    p-2 rounded-lg transition
+                    hover:ring-2 hover:ring-red-400 hover:ring-offset-2">
+        <!-- Ícono hamburguesa -->
+        <svg id="icon-open" xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <!-- Ícono cerrar -->
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Navegación -->
+      <nav id="menu" class="hidden absolute top-16 right-6 bg-white shadow-lg rounded-lg
+                          md:flex md:static md:shadow-none md:bg-transparent md:rounded-none
+                          space-y-4 md:space-y-0 md:space-x-6 p-6 md:p-0">
+        <a href="#about" class="block hover:text-red-500">Sobre mí</a>
+        <a href="#skills" class="block hover:text-red-500">Habilidades</a>
+        <a href="#projects" class="block hover:text-red-500">Proyectos</a>
+        <a href="#contact" class="block hover:text-red-500">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-white text-red-600 py-20">
+  <section id="hero" class="bg-white text-red-600 py-20">
     <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
       <!-- Texto Izquierda -->
       <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
@@ -178,5 +198,27 @@
   </footer>
 
 </body>
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
+  const links = menu.querySelectorAll('a');
+  const iconOpen = document.getElementById('icon-open');
+  const iconClose = document.getElementById('icon-close');
 
+  // Toggle menú y cambiar íconos
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    iconOpen.classList.toggle('hidden');
+    iconClose.classList.toggle('hidden');
+  });
+
+  // Cerrar menú al hacer click en un enlace
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+</script>
 </html>
