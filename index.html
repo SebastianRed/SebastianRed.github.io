@@ -434,11 +434,34 @@
               API REST para acortar URLs desarrollada con Spring Boot. Implementa persistencia con SQLite, validaciones
               personalizadas y generación de códigos únicos.
             </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Java</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Spring Boot</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">SQLite</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">REST API</span>
+            <div class="flex flex-wrap gap-4">
+              <div class="group/tooltip relative">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" 
+                     alt="Java" 
+                     class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+                     loading="lazy" />
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+                  Java
+                </span>
+              </div>
+              <div class="group/tooltip relative">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" 
+                     alt="Spring Boot" 
+                     class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+                     loading="lazy" />
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+                  Spring Boot
+                </span>
+              </div>
+              <div class="group/tooltip relative">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" 
+                     alt="SQLite" 
+                     class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+                     loading="lazy" />
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+                  SQLite
+                </span>
+              </div>
             </div>
             <div class="flex items-center gap-3 pt-4">
               <a href="https://github.com/SebastianRed/url-shortener" target="_blank" rel="noopener noreferrer"
@@ -461,9 +484,10 @@
 
         <!-- Project 2: Template -->
         <div
-          class="group reveal bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:border-red-600 hover:shadow-2xl transition-all duration-300">
-          <div class="relative overflow-hidden h-52">
-            <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-90"></div>
+  class="group reveal bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:border-red-600 hover:shadow-2xl transition-all duration-300">
+  
+  <div class="relative overflow-hidden h-52">
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-90"></div>
             <div class="absolute inset-0 flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-white/80" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -471,40 +495,90 @@
                   d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
               </svg>
             </div>
-          </div>
-          <div class="p-6 space-y-4">
-            <div class="flex items-center justify-between">
-              <h4 class="text-2xl font-bold text-gray-900">Proyecto FullStack</h4>
-              <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-semibold">FullStack</span>
-            </div>
-            <p class="text-gray-600 leading-relaxed">
-              Aplicación web completa con backend en Spring Boot y frontend en React. Gestión de usuarios, autenticación
-              JWT y operaciones CRUD.
-            </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Java</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Spring</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">React</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">MySQL</span>
-            </div>
-            <div class="flex items-center gap-3 pt-4">
-              <a href="https://github.com/SebastianRed" target="_blank" rel="noopener noreferrer"
-                class="flex-1 text-center px-4 py-2 rounded-lg bg-gray-900 text-white font-medium hover:bg-gray-700 transition-colors duration-200">
-                <span class="flex items-center justify-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                      d="M12 2C6.477 2 2 6.484 2 12.012c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.646.35-1.088.636-1.34-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.099 2.65.64.7 1.028 1.595 1.028 2.688 0 3.847-2.337 4.695-4.566 4.944.359.309.678.919.678 1.852 0 1.336-.012 2.417-.012 2.747 0 .268.18.579.688.481C19.138 20.188 22 16.437 22 12.012 22 6.484 17.523 2 12 2z" />
-                  </svg>
-                  GitHub
-                </span>
-              </a>
-              <a href="#"
-                class="flex-1 text-center px-4 py-2 rounded-lg border-2 border-red-600 text-red-600 font-medium hover:bg-red-50 transition-colors duration-200">
-                Demo
-              </a>
-            </div>
-          </div>
-        </div>
+  </div>
+
+  <div class="p-6 space-y-4">
+    <div class="flex items-center justify-between">
+      <h4 class="text-2xl font-bold text-gray-900">Movie Review Web</h4>
+      <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-semibold">
+        FullStack
+      </span>
+    </div>
+
+    <p class="text-gray-600 leading-relaxed">
+      Plataforma de reviews de películas y series desarrollada con Spring Boot y React.
+      Integra TMDB API para obtener información externa, mientras gestiona usuarios, 
+      reseñas internas y autenticación JWT.
+    </p>
+
+    <div class="flex flex-wrap gap-4">
+
+      <!-- Java -->
+      <div class="group/tooltip relative">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+          alt="Java"
+          class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+          loading="lazy" />
+        <span
+          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+          Java 17+
+        </span>
+      </div>
+
+      <!-- Spring -->
+      <div class="group/tooltip relative">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+          alt="Spring Boot"
+          class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+          loading="lazy" />
+        <span
+          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+          Spring Boot · Security · JPA
+        </span>
+      </div>
+
+      <!-- React -->
+      <div class="group/tooltip relative">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+          alt="React"
+          class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+          loading="lazy" />
+        <span
+          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+          React + TypeScript
+        </span>
+      </div>
+
+      <!-- MySQL -->
+      <div class="group/tooltip relative">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+          alt="MySQL"
+          class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+          loading="lazy" />
+        <span
+          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+          MySQL
+        </span>
+      </div>
+
+    </div>
+
+    <div class="flex items-center gap-3 pt-4">
+      <a href="https://github.com/SebastianRed/movie-review-api"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex-1 text-center px-4 py-2 rounded-lg bg-gray-900 text-white font-medium hover:bg-gray-700 transition-colors duration-200">
+        GitHub
+      </a>
+
+      <a href="#"
+        class="flex-1 text-center px-4 py-2 rounded-lg border-2 border-red-600 text-red-600 font-medium hover:bg-red-50 transition-colors duration-200">
+        Demo
+      </a>
+    </div>
+
+  </div>
+</div>
 
         <!-- Project 3: Template -->
         <div
@@ -528,11 +602,43 @@
               REST API para gestión de recursos con Spring Boot. Implementa paginación, filtros avanzados, validaciones
               y documentación con Swagger.
             </p>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Spring Boot</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">JPA</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">MySQL</span>
-              <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm">Swagger</span>
+            <div class="flex flex-wrap gap-4">
+              <div class="group/tooltip relative">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" 
+                     alt="Spring Boot" 
+                     class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+                     loading="lazy" />
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+                  Spring Boot
+                </span>
+              </div>
+              <div class="group/tooltip relative">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hibernate/hibernate-original.svg" 
+                     alt="JPA" 
+                     class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+                     loading="lazy" />
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+                  JPA
+                </span>
+              </div>
+              <div class="group/tooltip relative">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" 
+                     alt="MySQL" 
+                     class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+                     loading="lazy" />
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+                  MySQL
+                </span>
+              </div>
+              <div class="group/tooltip relative">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg" 
+                     alt="Swagger" 
+                     class="w-7 h-7 transition-transform duration-200 group-hover/tooltip:scale-110"
+                     loading="lazy" />
+                <span class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1 bg-gray-900 text-white text-sm rounded-lg opacity-0 invisible group-hover/tooltip:opacity-100 group-hover/tooltip:visible transition-all duration-200 whitespace-nowrap pointer-events-none">
+                  Swagger
+                </span>
+              </div>
             </div>
             <div class="flex items-center gap-3 pt-4">
               <a href="https://github.com/SebastianRed" target="_blank" rel="noopener noreferrer"
@@ -554,7 +660,6 @@
         </div>
 
       </div>
-
       <!-- CTA para ver más proyectos -->
       <div class="text-center mt-12 reveal">
         <a href="https://github.com/SebastianRed" target="_blank" rel="noopener noreferrer"
